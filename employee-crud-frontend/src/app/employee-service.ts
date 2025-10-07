@@ -8,7 +8,7 @@ import { Employee } from './employee';
 })
 export class EmployeeService {
 
-  private baseUrl="http://localhost:8080/employees";
+  private baseUrl="https://thorough-vitality-production.up.railway.app/employees";
   constructor(private httpClient:HttpClient){}
   
   getEmployeeList():Observable<Employee[]>{
